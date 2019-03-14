@@ -22,8 +22,7 @@ public class CustomerInterfaceDAOImpl implements CustomerInterfaceDAO{
 	 con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","capgemini","oracle");
 	}
 	public void registration() throws ClassNotFoundException, SQLException {
-		// TODO Auto-generated method stub
-	/*	connection();
+		// TODO Auto-generated method stub/*	connection();
 		PreparedStatement pst=con.prepareStatement("insert into customer_details ( ACCOUNT_NO,FIRST_NAME, LAST_NAME, EMAIL_ID, PASSWORD, PANCARD_NO, AADHAAR_NO, ADDRESS, MOBILE_NO, BALANCE) \r\n" + 
 				"values (s3.nextval,?,?,?,?,?,?,?,?,?)") ;
 
@@ -63,7 +62,7 @@ public class CustomerInterfaceDAOImpl implements CustomerInterfaceDAO{
 		rs2.next();// the cursor selects the last row
 		
 		
-		System.out.println("you are succesfully registered and your account number is :  "+rs2.getString(1));*/
+		System.out.println("you are succesfully registered and your account number is :  "+rs2.getString(1));
 		login();
 
 	}
