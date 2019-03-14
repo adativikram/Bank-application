@@ -14,7 +14,7 @@ public class CustomerInterfaceServiceImpl implements CustomerInterfaceService{
 		daoObj.registration();	
 	}
 
-	public void login() {
+	public void login() throws ClassNotFoundException, SQLException {
 		// TODO Auto-generated method stub
 		daoObj.login();
 	}

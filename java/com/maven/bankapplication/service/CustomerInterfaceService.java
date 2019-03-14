@@ -4,5 +4,5 @@ import java.sql.SQLException;
 
 public interface CustomerInterfaceService {
 	void registration() throws ClassNotFoundException, SQLException;
-	void login();
+	void login() throws ClassNotFoundException, SQLException;
 }
